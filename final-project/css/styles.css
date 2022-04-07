@@ -1,3 +1,150 @@
-body {
-    background-color: blue;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 1rem 1rem;
+}
+.centered {
+    background-color: burlywood;
+    margin: 1rem 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box6"
+}
+
+.header, nav, ul, li {
+    background-color: burlywood;
+}
+
+h1 {
+    margin: 1rem 1rem;
+}
+
+
+.box {
+    min-height: 100px;
+    background-color: burlywood;
+    margin: 1rem 1rem;
+}
+
+.box:nth-child(1){
+    grid-area: box1;
+
+}
+
+
+.box:nth-child(2){
+    grid-area: box2;
+}
+
+
+.box:nth-child(3){
+    grid-area: box3;
+}
+
+
+.box:nth-child(4){
+    grid-area: box4;
+}
+
+
+.box:nth-child(5){
+    grid-area: box5;
+}
+
+.box:nth-child(6){
+    display: none;
+}
+
+.wrapper {
+    background-color: burlywood;
+}
+
+.block:nth-child(1):nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block:nth-child(3){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#text {
+    width: 50%;
+    block-size: 150px;
+}
+
+table, tr, td {
+    font-size: 50px;
+    border: solid;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, 1fr);
+    border: solid;
+}
+
+.grid-item:nth-child(1){
+    display: grid;
+    background-color: rgba(243, 201, 147, 0.747);
+    border-bottom: solid;
+}
+
+.grid-item:nth-child(2){
+    display: grid;
+    background-color: rgba(243, 201, 147, 0.747);
+    border-bottom: solid;
+    border-left: solid;
+}
+
+.grid-item:nth-child(3){
+    display: grid;
+    border-bottom: solid;
+}
+
+.grid-item:nth-child(4){
+    display: grid;
+    border-bottom: solid;
+    border-left: solid;
+}
+
+.grid-item:nth-child(5){
+    display: grid;
+}
+
+.grid-item:nth-child(6){
+    display: grid;
+    border-left: solid;
+}
+
+.footer {
+    background-color: black;
+}
+
+.foot-wrapper {
+    background-color: brown;
 }
