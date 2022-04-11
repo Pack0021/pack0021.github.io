@@ -6,37 +6,143 @@ html {
     margin: 1rem 1rem;
 }
 .centered {
-    background-color: burlywood;
+    background-color:#ffe6ac;
+    margin: 1rem .9rem;
+}
+
+p {
     margin: 1rem 1rem;
+}
+
+.about{
+    margin-left: 800px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 90px;
     grid-template-areas: 
     "box1 box2 box3"
     "box4 box5 box6"
 }
 
-.header, nav, ul, li {
-    background-color: burlywood;
+.nav, ul {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    margin: 1rem 1rem;
 }
 
-h1 {
+li {
+    display: inline;
+    color: #ffe6ac;
+}
+
+li a:hover {
+    background-color: #ffe6ac;
+    text-decoration: none;
+  }
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #c78c06;
+    padding: 14px 16px;
     margin: 1rem 1rem;
+}
+
+
+.fa-magnifying-glass {
+    padding: 5px;
+    color: #c78c06;
+    border-top: solid #c78c06;
+    border-right: solid #c78c06;
+    border-bottom: solid #c78c06;
+}
+
+.section {
+    position: absolute;
+    color: white;
+    background-color:rgba(0,0,0,.5);
+    margin: 1rem 14rem;
+    margin-top: 100px;
+    padding: 25px;    
+}
+
+.form, .fa-play, button {
+    background-color:grey;
+}
+
+.fa-play {
+    padding: 30px;
+    color: white;
+}
+
+.form, button {
+    margin: 1rem 1rem;
+    border: solid #c78c06;
+    color: white;
+}
+
+/* our vision content */
+.banner {
+    position: absolute;
+    margin: 1rem 5rem;
+    margin-top: 100px;
+    color: white;
+}
+
+/* our services, our team */
+h1 {
+    margin: 1rem 5.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+/* main header */
+h2 {
+    color: white;
+    font-size: 55px;
+    padding: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 700;
+}
+
+h3 {
+   font-size: 20px;
+   margin: 1rem 1rem;
+}
+
+/* our vision header */
+h4 {
+    font-size: 55px;
+}
+
+/* grid header  */
+h5 {
+    margin: 1rem 1rem;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* about us header, send us a message, location */
+h6 {
+    margin: 1rem 1rem;
+    font-size: 40px;
 }
 
 
 .box {
-    min-height: 100px;
+    min-height: 150px;
     background-color: burlywood;
-    margin: 1rem 1rem;
+    justify-content: space-between;
 }
 
 .box:nth-child(1){
     grid-area: box1;
-
+    grid-column: 1 / 5;
 }
 
 
@@ -59,12 +165,9 @@ h1 {
     grid-area: box5;
 }
 
-.box:nth-child(6){
-    display: none;
-}
-
+/* our team wrapper */
 .wrapper {
-    background-color: burlywood;
+    background-color:#ffe6ac;
 }
 
 .block:nth-child(1):nth-child(1){
@@ -87,17 +190,20 @@ h1 {
     flex-wrap: wrap;
 }
 
-#text {
-    width: 50%;
-    block-size: 150px;
-}
-
+/* hours of operaion table & wrapper */
 table, tr, td {
     font-size: 50px;
     border: solid;
-    width: auto;
-    justify-content: center;
-    align-items: center;
+    width: 1000px;
+    margin: 1rem 1rem;
+}
+
+caption {
+    margin: 1rem 1rem;
+}
+
+.operation {
+    margin: 5rem 5rem;
 }
 
 
@@ -140,5 +246,6 @@ table, tr, td {
     display: grid;
     border-left: solid;
 }
+
 
 

@@ -8,114 +8,121 @@
 
     <script src="https://kit.fontawesome.com/4f7d4a6a45.js" crossorigin="anonymous"></script>
 
-    <link href="css/reset.css" rel="resetcss">
+    <link href="css/reset.css" rel="stylesheet">
 
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- navigation bar -->
-    <header>
-            <nav> 
+    <header class="clearfix">
+            <nav>
                 <ul>
-                    <li><a href="index.html">Home</a><img src="images/logo.png" alt="logo"></li>
+                    <li> <img src="images/logo.png" alt="logo"><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a><input type="text" placeholder="Search"/>
+                    <i class="fa-solid fa-magnifying-glass"></i></li>
                 </ul>
-            <div class="section">
-                <input type="text" placeholder="Search"/>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
             </nav>
     </header>
-            <div class="centered">
-                <img src="images/main-banner.jpg" alt="main banner">
-                    <h2>Welcome to Three Start Media!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis 
-                    quos sed, omnis a excepturi voluptate porro blanditiis nam necessitatibus ad 
-                    officiis numquam illo quisquam recusandae est repellendus libero. Aliquam.</p>
-                    <form action="thanks.html" method="post">
-                        <button type="submit">Connect with us <i class="fa-solid fa-play"></i></button>
-                    </form>
-                    <img src="images/about-us.jpg" alt="about us">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius 
+    <div class="centered">
+        <div class="section" style="height: 500px; width: 900px;">
+            <h2>Welcome to Three Start Media!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis 
+                quos sed, omnis a excepturi voluptate porro blanditiis nam necessitatibus ad 
+                officiis numquam illo quisquam recusandae est repellendus libero. Aliquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis 
+                quos sed, omnis a excepturi voluptate porro blanditiis nam necessitatibus ad 
+                officiis numquam illo quisquam recusandae est repellendus libero. AliquamLorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis 
+                quos sed, omnis a excepturi voluptate porro blanditiis nam necessitatibus ad 
+                officiis numquam illo quisquam recusandae est repellendus libero. Aliquam</p>
+            <form action="thanks.html" method="post">
+                <button type="submit">Connect with us<i class="fa-solid fa-play"></i></button>
+            </form>
+            </div>   
+            <img src="images/main-banner.jpg" alt="main banner" style="height: 700px; width: 1200px;">
+            <img src="images/about-us.jpg" alt="aboutus" style="height: 350px; width:50%; margin: 1rem 5rem;">
+            </div>
+            <div class="about">
+            <h6>About Us</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius 
+                    porro placeat aut officia sunt alias iusto maiores modi sint? Quod eligendi 
+                    magni ut minus! Obcaecati ipsum error nostrum vero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius 
+                    porro placeat aut officia sunt alias iusto maiores modi sint? Quod eligendi 
+                    magni ut minus! Obcaecati ipsum error nostrum vero.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius 
                     porro placeat aut officia sunt alias iusto maiores modi sint? Quod eligendi 
                     magni ut minus! Obcaecati ipsum error nostrum vero.</p>
-                </div>
+        </div>
                 <h1>Our Services</h1>
                 <div class="container">
                     <div class="box">
                         <img src="images/digital.jpg" alt="holding phone">
-                        <h1>Digital Transformation</h1>
+                        <h5>Digital Transformation</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
                             dolore aspernatur quia, iste dicta vel molestias. Ad numquam perspiciatis 
                             hic nobis officia mollitia vel error magni! Aut necessitatibus corporis 
                             veritatis.</p>
                             <form action="thanks.html" method="post">
-                                <button type="submit">Digital Plans <i class="fa-solid fa-play"></i></button>
+                                <button type="submit">Digital Plans<i class="fa-solid fa-play"></i></button>
                             </form>
                     </div>
                     <div class="box">
                         <img src="images/marketing.jpg" alt="laptop">
-                        <h1>Marketing</h1>
+                        <h5>Marketing</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
                             dolore aspernatur quia, iste dicta vel molestias. Ad numquam perspiciatis 
                             hic nobis officia mollitia vel error magni! Aut necessitatibus corporis 
                             veritatis.</p>
                             <form action="thanks.html" method="post">
-                                <button type="submit">Marketing Plans <i class="fa-solid fa-play"></i></button>
+                                <button type="submit">Marketing Plans<i class="fa-solid fa-play"></i></button>
                             </form>
                     </div>
                     <div class="box">
                         <img src="images/video.jpg" alt="video">
-                        <h1>Video Production</h1>
+                        <h5>Video Production</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
                             dolore aspernatur quia, iste dicta vel molestias. Ad numquam perspiciatis 
                             hic nobis officia mollitia vel error magni! Aut necessitatibus corporis 
                             veritatis.</p>
                             <form action="thanks.html" method="post">
-                                <button type="submit">Video Plans <i class="fa-solid fa-play"></i></button>
+                                <button type="submit">Video Plans<i class="fa-solid fa-play"></i></button>
                             </form>
                     </div>
                     <div class="box">
                         <img src="images/web.jpg" alt="web">
-                        <h1>Web Development</h1>
+                        <h5>Web Development</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
                             dolore aspernatur quia, iste dicta vel molestias. Ad numquam perspiciatis 
                             hic nobis officia mollitia vel error magni! Aut necessitatibus corporis 
                             veritatis.</p>
                             <form action="thanks.html" method="post">
-                                <button type="submit">Web Plans <i class="fa-solid fa-play"></i></button>
+                                <button type="submit">Web Plans<i class="fa-solid fa-play"></i></button>
                             </form>
                     </div>
                     <div class="box">
                         <img src="images/print.jpg" alt="print">
-                        <h1>Print</h1>
+                        <h5>Print</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
                             dolore aspernatur quia, iste dicta vel molestias. Ad numquam perspiciatis 
                             hic nobis officia mollitia vel error magni! Aut necessitatibus corporis 
                             veritatis.</p>
                             <form action="thanks.html" method="post">
-                                <button type="button">Print Plans <i class="fa-solid fa-play"></i></button>
+                                <button type="button">Print Plans<i class="fa-solid fa-play"></i></button>
                             </form>
                     </div>
-                    <div class="box">6</div>
-                    <!-- our vision banner -->
                 </div>
                 <div class="banner">
-                    
-                    <h2>Our Vision</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
+                    <h4>Our Vision</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis 
                         dolore aspernatur quia, iste dicta vel molestias. Ad numquam perspiciatis 
                         hic nobis officia mollitia vel error magni! Aut necessitatibus corporis 
                         veritatis.</p>
-                        <img src="images/vision.jpg" alt="vision">
-                        <form action="thanks.html" method="post">
-                            <button type="submit">Learn More <i class="fa-solid fa-play"></i></button>
-                        </form>
+                <form action="thanks.html" method="post">
+                    <button type="submit">Learn More<i class="fa-solid fa-play"></i></button>
+                </form>
                 </div>
+                <img src="images/vision.jpg" alt="vision" style="height: 350px; width: 1500px;">
                 <h1>Our Team</h1>
                 <div class="wrapper">
                     <div class="block">
@@ -140,24 +147,40 @@
                     </div>
                 </div>
                 <div class="info-wrapper">
-                    <h1>Contact</h1>
-                    <h3>Send Us A Message</h3>
+                    <h1>Contact Us</h1>
+                    <h6>Send Us A Message</h6>
                     <h3>Full Name</h3><input id="fullname">
                     <h3>Email</h3><input id="email" type="email">
                     <h3>Message</h3><input id="text" type="text">
                     <input class="a" type="submit" value="Send">
                     <div class="map">
-                        <h1>Location</h1>
+                        <h6>Location</h6>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804446!2d-75.75712548518146!3d45.34993154908318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648925198162!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="grid-wrapper">
-                            <div class="grid-item">Days</div>
-                            <div class="grid-item">Hours</div>
-                            <div class="grid-item">Monday - Friday</div>
-                            <div class="grid-item">9 AM - 6 PM</div>
-                            <div class="grid-item">Saturday - Sunday</div>
-                            <div class="grid-item">Closed</div>
-                        </div>
+                    <div class="operation">
+                        <table>
+                            <caption>Hours of operation</caption>
+                            <thead>
+                                <tr>
+                                  <th>Days</th>
+                                  <th>Hours</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Monday - Friday</td>
+                                  <td>9 AM - 6 PM</td>
+                                </tr>
+                              </tbody>
+                              <tbody>
+                                  <tr>
+                                      <td>Saturday - Sunday</td>
+                                      <td>Closed</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                    </div>
+        
                         <footer>©Copyright Three Star Media, 2020 <br> 
                             All images are taken from Unsplash</footer>
                         </div>
