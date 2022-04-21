@@ -8,31 +8,31 @@
 
     <script src="https://kit.fontawesome.com/4f7d4a6a45.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
     <link href="css/reset.css" rel="stylesheet">
 
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="clearfix">
-        <img id="logo" src="images/logo.png" alt="logo">
-        <ul>
-            <li><a id="home" href="home.html">Home</a></li>
-        </ul>
-            <nav>
-                <div class="navitems">
-                    <ul>
-                        <li><a id="homie" href="home.html">Home</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <input id="search" type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </nav>
-     </div>  
-    
-        <div class="welcome">
+    <header>
+        <nav>
+            <div class="navitems">
+                <ul>
+                    <li><img id="logo" src="images/logo.png" alt="logo"></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <input id="search" type="text" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>  
+    <div class="welcome">
             <div class="start">
                 <h2>Welcome to Three Start Media!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt facilis
@@ -65,8 +65,6 @@
                     magni ut minus! Obcaecati ipsum error nostrum vero.</p>
                 </div>
         </div>
-    </div>
-    <!-- grid section -->
     <div class="services">
         <h5>Our Services</h5>
         <div class="wrapper-digital">
@@ -147,9 +145,11 @@
     </div>
     <img id="vision" src="images/vision.jpg" alt="vision">
     <h5>Our Team</h5>
-    <div class="container-grid">
-        <div class="john">
+    <div class="team container-grid">
+        <div class="johnpicture">
             <img id="john" src="images/john.jpg" alt="john">
+        </div>
+        <div class="johnbio">
             <header>John Doe</header>
             <h3>Ceo and Co-Owner</h3>
             <hr>
@@ -157,60 +157,63 @@
                 nobis officia placeat laborum, autem obcaecati numquam maxime ipsum, laudantium
                 unde, assumenda culpa fugit doloribus. Magnam ipsum obcaecati iusto?
             </p>
-            </div>
         </div>
-        <div class="container-grid">
-            <div class="bob">
-                <img id="bob" src="images/bob.jpg" alt="bob">
-                <header>Bob Rite</header>
-                <h3>CFO and CO-Owner</h3>
-                <hr>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ullam eveniet, rem
-                    quisquam recusandae, magnam dolorem temporibus eos adipisci, ipsum repellat
-                    praesentium illum veniam expedita in dolorum libero iure. Veniam.
-                </p>
-            </div>
+        <div class="bobpicture">
+            <img id="bob" src="images/bob.jpg" alt="bob">
         </div>
-    </div>    
+        <div class="bobbio">
+            <header>Bob Rite</header>
+            <h3>CFO and CO-Owner</h3>
+            <hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ullam eveniet, rem
+                quisquam recusandae, magnam dolorem temporibus eos adipisci, ipsum repellat
+                praesentium illum veniam expedita in dolorum libero iure. Veniam.
+            </p>
+        </div>
+    </div>
     <div class="info-wrapper">
-        <h1>Contact Us</h1>
-        <h6>Send Us A Message</h6>
-        <h3>Full Name</h3><input id="fullname">
-        <h3>Email</h3><input id="email" type="email">
-        <h3>Message</h3><input id="text" type="text">
-        <input id="send" type="submit" value="Send">
-        <div class="operation">
-            <table>
-                <caption>Hours of operation</caption>
-                <thead>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="contactus">
+            <h1>Contact Us</h1>
+            <h6 id="SUAM" >Send Us A Message</h6>
+            <h3>Full Name</h3><input id="fullname">
+            <h3>Email</h3><input id="email" type="email">
+            <h3>Message</h3><input id="text" type="text">
+            <input id="send" type="submit" value="Send">
         </div>
-        <div class="map">
-            <h6>Location</h6>
-            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804446!2d-75.75712548518146!3d45.34993154908318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648925198162!5m2!1sen!2sca"
-                style="height:600px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="info-wrapper">
+            <div class="map">
+                <h6>Location</h6>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804446!2d-75.75712548518146!3d45.34993154908318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648925198162!5m2!1sen!2sca"
+                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div class="container">
-            <footer>©Copyright Three Star Media, 2020 <br>
-            All images are taken from Unsplash</footer>
-        </div>
+    </div>
+    <div class="operation">
+        <table>
+            <caption>Hours of operation</caption>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>9 AM - 6 PM</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <footer>©Copyright Three Star Media, 2020 <br>
+        All images are taken from Unsplash</footer>
     </div>
 </body>
 </html>

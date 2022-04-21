@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 p {
     margin: 1rem;
@@ -11,23 +13,18 @@ p {
 /* navbar and header */
 
 
-
 #main {
     display: none;
 }
 
-.clearfix::after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
 #logo {
     margin: 1rem;
+    padding-right: 100%;
 }
 
-div.navitems {
+.navitems {
     background-color: #222;
+    text-align: center;
 }
 
 li {
@@ -38,6 +35,7 @@ li a:hover {
     background-color: #ffe6ac;
     text-decoration: #222;
 }
+
 
 a:link,
 a:visited {
@@ -82,7 +80,10 @@ a:visited {
 .about .aboutus {
     max-width: 100%;
     margin: 1rem;
+}
 
+#aboutuspic {
+    width: 100%;
 }
 
 .about {
@@ -104,7 +105,7 @@ button {
 
 .form,
 button {
-    margin: 1rem 1rem;
+    margin: 1rem;
     border: solid #c78c06;
     color: white;
 }
@@ -118,6 +119,7 @@ h2 {
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: 700;
 }
+
 
 
 /* our vision content */
@@ -144,7 +146,7 @@ h4 {
 /* grid header  */
 h5 {
     margin: 1rem;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -210,7 +212,7 @@ h5 {
 /* our team, full-name, email*/
 h1 {
     margin: 1rem;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -220,7 +222,7 @@ h3 {
 }
 
 
-header {
+.team header {
     font-size: 35px;
     margin: 1rem;
 }
@@ -238,34 +240,29 @@ hr {
 /* john image */
 #john {
     width: 100%;
-    max-width: 1200px;
 }
 
 /* bob image */
 #bob {
     width: 100%;
-    max-width: 1200px;
 }
 
 /* info/contact secton */
 
 #fullname {
     margin: 1rem;
-    width: 100%;
-    max-width: 1200px;
+    width: 95%;
 }
 
 #text {
     margin: 1rem;
-    width: 100%;
-    max-width: 1200px;
-    padding: 30%;
+    width: 95%;
+    padding: 20%;
 }
 
 #email {
     margin: 1rem;
-    width: 100%;
-    max-width: 1200px;
+    width: 95%;
 }
 
 #send {
@@ -273,15 +270,16 @@ hr {
 }
 
 #map {
-    width: 100%;
-    max-width: 1200px;
+    position: relative;
+    width: 95%;
+    height: 100%;
     margin: 1rem;
 }
 
-/* send us a message, location */
+/* send us a message, location hder */
 h6 {
-    margin: 1rem;
-    font-size: 40px;
+    margin: 3rem 1rem;
+    font-size: 30px;
 }
 
 /* hours of operaion table & wrapper */
@@ -319,8 +317,7 @@ caption {
 /* footer */
 
 footer {
-    margin-left: 20%;
-    margin-right: 20%;
+
     padding: 20px;
     padding-bottom: 20px;
     color: #c78c06;
@@ -330,46 +327,36 @@ footer {
     background-color: #222;
 }
 
-/* desktop layout */
+
+
+li {
+    padding: 1rem;
+}
+
+
+
+
+/* ------------------------desktop layout--------------------------- */
 
 @media screen and (min-width: 760px) {
     #main {
         width: 100%;
     }
     
-}
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
 
-
-@media screen and (min-width:760px){
     #aboutuspic {
         width: 50%;
     }
     
-}
 
-/* nav bar */
-
-@media screen and (min-width: 760px) {
+    /* nav bar */
     li {
-        display: inline-table;
+        /* display: inline-flex; */
         margin: 1rem;
-    }
-}
-@media screen and (max-width:760px) {
-    li {
-        padding: 1rem;
-        margin-left: 40%;
-    }
-
-    li #homie {
-        display: none;
-    }
-}
-
-
-@media screen and (min-width: 760px) {
-    a#home {
-       display: none;
     }
 
     a:link,
@@ -377,68 +364,129 @@ footer {
         display: flex;
     }
     
-}
-
-@media screen and (min-width: 760px) {
-    .clearfix {
-        background-color: #222;
+    h5  {
+        font-size: 30px;
     }
     
-}
-
-@media screen and (max-width: 760px) {
-    #home {
-    color: #222;
-}
-
-@media screen and (max-width:760px) {
-    .clearfix {
-    background-color: #c78c06;
-}
-
-
-@media screen and (max-width:760px) {
-    .clearfix::after {
-        display: block;
-        content: "";
-        clear: both;
-    }
-}
-
-
-@media screen and (max-width:760px){
-    #aboutuspic {
-        width: 100%;
-    }
-}
-
-
-
-/* desktop our services */
-
-@media screen and (min-width: 760px) {
     .wrapper {
         margin: 1rem;
         width: 33%;
         background-color: #ffe6ac;
     }
-    
-}
-
-@media screen and (min-width: 760px) {
-    .container-grid {
-        display: none;
-        flex-direction: row;
-        grid-template-columns: repeat(1, 1fr);
+    /* --------------our services grid-------------*/
+    .services {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
-        "john bob"
+        "serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr"
+        "marketing marketing marketing digital digital digital"
+        "video video web web print print"
     }
 
-}
+    .services h5 {
+        grid-area: serv-hdr;
+    }    
 
-@media screen and (min-width: 760px) {
+    .wrapper-market {
+        grid-area: marketing;
+    }
+
+    .wrapper-digital {
+        grid-area: digital;
+    }
+
+    .wrapper-video {
+        grid-area: video;
+    }
+
+    .wrapper-web {
+        grid-area: web;
+    }
+
+    .wrapper-print {
+        grid-area: print;
+    }
+
     .ourteam {
         display: flex;
         background-color: #ffe6ac;
     }
+
+    /* our team grid */
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "johnpic johnbio"
+        "bobbio bobpic"
+    }
+
+    .johnpicture {
+        grid-area: johnpic;
+    }
+
+    .johnbio {
+        grid-area: johnbio;
+    }
+
+    .bobbio {
+        grid-area: bobbio;
+    }
+
+    .bobpicture {
+        grid-area: bobpic;
+    }
+
+    .team.container-grid {
+        padding-bottom: 0%;
+    }
+
+    /* contact us grid */
+
+    .info-wrapper {
+        display: grid;
+        margin: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "contactus map"
+    }
+
+    .contactus {
+        grid-area: contactus;
+    }
+
+    .map {
+        grid-area: map;
+    }
+
+    /* direct (contact us) boxes */
+
+    #fullname {
+        width: 60%;
+    }
+
+    #text {
+        margin: 1rem;
+        width: 60%;
+        padding: 20%;
+    }
+    
+    #email {
+        margin: 1rem;
+        width: 60%;
+    }
+    /* --------------------------------- */
+
+    #send {
+        display: flex;
+    }
+    
+    
+    #map {
+        width: 100%;
+        height: 80%;
+        margin: 1rem;
+    }
+    
 }
+
